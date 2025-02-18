@@ -1,0 +1,174 @@
+/* Add your background image/video here */
+html {
+  overflow-y: scroll;
+  overflow-x: scroll;
+}
+
+body {
+  background-image: url("bg.png");
+  background-repeat: repeat;
+  background-size: 600px;
+  background-position: center;
+  transition: background-position 0.1s ease-out;
+  /* Add a semi-transparent overlay */
+  background-color: rgba(
+    255,
+    255,
+    255,
+    0.55
+  ); /* Adjust opacity (0 = fully transparent, 1 = fully opaque) */
+  background-blend-mode: overlay;
+
+  font-family: Arial, sans-serif;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  margin: 0;
+}
+
+h2 {
+  /* Top Line "Drink Selected" */
+  font-size: 1rem;
+  margin-top: 10px;
+  margin-bottom: 5px;
+}
+
+h1 {
+  /* Selected Drink */
+  font-size: 3rem;
+  margin-top: 10px;
+  margin-bottom: 5px;
+}
+
+h3 {
+  /* Recipe Link */
+  font-size: 1rem;
+  margin-top: 15px;
+  margin-bottom: 0px;
+}
+
+h3 {
+  margin-top: 10px;
+  margin-bottom: 25px;
+}
+
+h4 {
+  /* Selected Drink */
+  font-size: 2rem;
+}
+
+h5 {
+  /* Selected Drink */
+  font-size: 1rem;
+  margin-top: 20px;
+  margin-bottom: 5px;
+}
+
+h6 {
+  /* Drink-o Bingo */
+  font-size: 4rem;
+  margin-top: 20px;
+  margin-bottom: 50px;
+  vertical-align: text-top;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.start-btn,
+.next-btn {
+  padding: 20px 20px;
+  font-size: 1.2rem;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 0px;
+  margin-bottom: 20px;
+}
+
+.reset-btn {
+  padding: 10px 10px;
+  font-size: 1.2rem;
+  background-color: #939393;
+  color: rgb(255, 255, 255);
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 20px;
+  position: absolute;
+  right: 0;
+}
+
+.bingo-grid {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-template-rows: repeat(5, 1fr);
+  gap: 5px;
+  width: 400px; /* Lock it to prevent width shifts */
+  height: 400px;
+  justify-content: center; /* Prevents unintended left shift */
+  align-items: center;
+}
+
+.bingo-cell {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
+  border: 2px solid #000;
+  background-color: white;
+  text-align: center;
+  font-size: 0.92rem;
+  font-weight: bold;
+  cursor: default;
+  user-select: none;
+  height: 3rem;
+  width: 3rem;
+}
+
+.selected {
+  background-color: #4caf50;
+  color: white;
+}
+
+.bonus {
+  background-color: #ff9800;
+  color: white;
+  display: flex; /* Ensures proper positioning */
+  align-items: center;
+  justify-content: center;
+  width: 3rem;
+  height: 3rem;
+}
+
+.winner {
+  font-size: 2rem;
+  color: #d32f2f;
+  margin-top: 20px;
+}
+
+a {
+  font-size: 1.2rem;
+  color: #007bff;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+@media (max-width: 600px) {
+  .bingo-cell {
+    font-size: 0.9rem;
+  }
+}

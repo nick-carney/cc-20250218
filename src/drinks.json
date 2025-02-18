@@ -1,0 +1,262 @@
+[
+  {
+    "name": "Classic Margarita*",
+    "category": "Mezcal/Tequila",
+    "recipe": "recipes.html#classic-margarita"
+  },
+  {
+    "name": "Pina Colada*",
+    "category": "Other",
+    "recipe": "recipes.html#pina-colada"
+  },
+  {
+    "name": "Bay Breeze*",
+    "category": "Other",
+    "recipe": "recipes.html#bay-breeze"
+  },
+  {
+    "name": "Caribbean Rum Punch*",
+    "category": "Other",
+    "recipe": "recipes.html#caribbean-rum-punch"
+  },
+  {
+    "name": "Bahama Mama*",
+    "category": "Other",
+    "recipe": "recipes.html#bahama-mama"
+  },
+  {
+    "name": "Orange Crush*",
+    "category": "Other",
+    "recipe": "recipes.html#orange-crush"
+  },
+  {
+    "name": "Blue Hawaiian*",
+    "category": "Other",
+    "recipe": "recipes.html#blue-hawaiian"
+  },
+  {
+    "name": "Hurricane*",
+    "category": "Other",
+    "recipe": "recipes.html#hurricane"
+  },
+  {
+    "name": "Dirty Monkey*",
+    "category": "Other",
+    "recipe": "recipes.html#dirty-monkey"
+  },
+  {
+    "name": "Mexican Bulldog*",
+    "category": "Mezcal/Tequila",
+    "recipe": "recipes.html#mexican-bulldog"
+  },
+  {
+    "name": "Electric Lemonade*",
+    "category": "Other",
+    "recipe": "recipes.html#electric-lemonade"
+  },
+  {
+    "name": "Lava Flow*",
+    "category": "Other",
+    "recipe": "recipes.html#lava-flow"
+  },
+  {
+    "name": "Miami Vice*",
+    "category": "Other",
+    "recipe": "recipes.html#miami-vice"
+  },
+  {
+    "name": "Mudslide*",
+    "category": "Other",
+    "recipe": "recipes.html#mudslide"
+  },
+  {
+    "name": "Pain Killer*",
+    "category": "Other",
+    "recipe": "recipes.html#painkiller"
+  },
+  {
+    "name": "Blue Lagoon*",
+    "category": "Other",
+    "recipe": "recipes.html#blue-lagoon"
+  },
+  {
+    "name": "Paloma*",
+    "category": "Mezcal/Tequila",
+    "recipe": "recipes.html#paloma"
+  },
+  {
+    "name": "Superman*",
+    "category": "Other",
+    "recipe": "recipes.html#superman"
+  },
+  {
+    "name": "Rum Runner*",
+    "category": "Other",
+    "recipe": "recipes.html#rum-runner"
+  },
+  {
+    "name": "Purple Haze*",
+    "category": "Other",
+    "recipe": "recipes.html#purple-hze"
+  },
+  {
+    "name": "Long Island Iced Tea",
+    "category": "Other",
+    "recipe": "recipes.html#long-island-iced-tea"
+  },
+  {
+    "name": "Bumble Bee Shot*",
+    "category": "Other",
+    "recipe": "recipes.html#bumble-bee-shot"
+  },
+  {
+    "name": "Cuba Libre*",
+    "category": "Other",
+    "recipe": "recipes.html#cuba-libre"
+  },
+  {
+    "name": "Dirty Banana*",
+    "category": "Other",
+    "recipe": "recipes.html#dirty-banana"
+  },
+  {
+    "name": "Michelada*",
+    "category": "Other",
+    "recipe": "recipes.html#michelada"
+  },
+  {
+    "name": "Bob Marley*",
+    "category": "Mezcal/Tequila",
+    "recipe": "recipes.html#bob-marley"
+  },
+  {
+    "name": "Sex on the Beach*",
+    "category": "Other",
+    "recipe": "recipes.html#sex-on-the-beach"
+  },
+  {
+    "name": "Tequila Sunrise*",
+    "category": "Mezcal/Tequila",
+    "recipe": "recipes.html#tequila-sunrise"
+  },
+  {
+    "name": "Blue Jamaica*",
+    "category": "Other",
+    "recipe": "recipes.html#blue-jamaica"
+  },
+  {
+    "name": "Banana Snowman*",
+    "category": "Other",
+    "recipe": "recipes.html#banana-snowman"
+  },
+  {
+    "name": "Captain America*",
+    "category": "Other",
+    "recipe": "recipes.html#captain-america"
+  },
+  {
+    "name": "Rooftop Drink",
+    "category": "Other",
+    "recipe": "recipes.html#rooftop"
+  },
+  {
+    "name": "Sweet Mama*",
+    "category": "Mezcal/Tequila",
+    "recipe": "recipes.html#sweet-mama"
+  },
+  {
+    "name": "Mezcal Mule",
+    "category": "Mezcal/Tequila",
+    "recipe": "recipes.html#mezcal-mule"
+  },
+  {
+    "name": "Whiskey Sour",
+    "category": "Other",
+    "recipe": "recipes.html#whiskey-sour"
+  },
+  {
+    "name": "Mai Tai*",
+    "category": "Other",
+    "recipe": "recipes.html#mai-tai"
+  },
+  {
+    "name": "Mojito*",
+    "category": "Other",
+    "recipe": "recipes.html#mojito"
+  },
+  {
+    "name": "Old Fashioned",
+    "category": "Other",
+    "recipe": "recipes.html#old-fashioned"
+  },
+  {
+    "name": "Espresso Martini",
+    "category": "Other",
+    "recipe": "recipes.html#espresso-martini"
+  },
+  {
+    "name": "Cosmo",
+    "category": "Other",
+    "recipe": "recipes.html#cosmopolitan"
+  },
+  {
+    "name": "Negroni",
+    "category": "Other",
+    "recipe": "recipes.html#negroni"
+  },
+  {
+    "name": "Gimlet",
+    "category": "Other",
+    "recipe": "recipes.html#gimlet"
+  },
+  {
+    "name": "Classic Martini",
+    "category": "Other",
+    "recipe": "recipes.html#classic-martini"
+  },
+  {
+    "name": "Daiquiri*",
+    "category": "Other",
+    "recipe": "recipes.html#daiquiri"
+  },
+  {
+    "name": "Pisco Sour",
+    "category": "Other",
+    "recipe": "recipes.html#pisco-sour"
+  },
+  {
+    "name": "Sidecar",
+    "category": "Other",
+    "recipe": "recipes.html#sidecar"
+  },
+  {
+    "name": "Sazerac",
+    "category": "Other",
+    "recipe": "recipes.html#sazerac"
+  },
+  {
+    "name": "Mezcal Negroni",
+    "category": "Mezcal/Tequila",
+    "recipe": "recipes.html#mezcal-negroni"
+  },
+  {
+    "name": "Jungle Bird",
+    "category": "Other",
+    "recipe": "recipes.html#jungle-bird"
+  },
+  {
+    "name": "Clover Club",
+    "category": "Other",
+    "recipe": "recipes.html#clover-club"
+  },
+  {
+    "name": "Mexican Martini",
+    "category": "Mezcal/Tequila",
+    "recipe": "recipes.html#mexican-martini"
+  },
+  {
+    "name": "Tequila Manhattan",
+    "category": "Mezcal/Tequila",
+    "recipe": "recipes.html#tequila-manhattan"
+  }
+]
