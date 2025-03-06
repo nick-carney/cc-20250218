@@ -29,18 +29,48 @@ body {
   margin: 0;
 }
 
+.button-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between; /* Spreads buttons apart */
+  width: 100%;
+  max-width: 400px; /* Adjust based on your layout */
+  margin-top: 20px;
+}
+
 h2 {
   /* Top Line "Drink Selected" */
   font-size: 1rem;
-  margin-top: 10px;
-  margin-bottom: 5px;
 }
 
 h1 {
-  /* Selected Drink */
-  font-size: 3rem;
-  margin-top: 10px;
-  margin-bottom: 5px;
+  font-size: clamp(1.5rem, 2.8rem, 3rem); /* Dynamically adjust font size */
+  margin-top: 0px;
+  margin-bottom: 0px;
+  max-width: 100%;
+  text-align: center;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+  line-height: 2.8rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 3rem;
+  white-space: normal;
+}
+
+.strikethrough {
+  text-decoration: ;
+}
+
+.drink-name-wrapper {
+  width: 100%;
+  max-width: 400px; /* Matches the bingo board width */
+  min-height: 3rem; /* Ensures consistent height */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
 }
 
 h3 {
@@ -83,6 +113,11 @@ h6 {
   position: relative;
 }
 
+.shot {
+  background-color: #d32f2f;
+  color: white;
+}
+
 .start-btn,
 .next-btn {
   padding: 20px 20px;
@@ -93,7 +128,25 @@ h6 {
   border-radius: 5px;
   cursor: pointer;
   margin-top: 0px;
+  margin-right: 20px;
   margin-bottom: 20px;
+  position: center;
+  flex: 1; /* Allows the button to remain centered */
+  text-align: center;
+}
+
+.shot-btn {
+  padding: 20px 20px;
+  font-size: 1.2rem;
+  background-color: #d32f2f;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 0px;
+  margin-left: 10px;
+  margin-bottom: 20px;
+  margin-left: auto; /* Pushes SHOT! button to the right */
 }
 
 .reset-btn {
@@ -114,9 +167,9 @@ h6 {
   grid-template-columns: repeat(5, 1fr);
   grid-template-rows: repeat(5, 1fr);
   gap: 5px;
-  width: 400px; /* Lock it to prevent width shifts */
+  width: 400px; /* Ensure a fixed width */
   height: 400px;
-  justify-content: center; /* Prevents unintended left shift */
+  justify-content: center;
   align-items: center;
 }
 
@@ -157,14 +210,65 @@ h6 {
   margin-top: 20px;
 }
 
+.winning {
+  background: gold; /* Base gold background */
+  animation: gold-wipe 1s linear infinite;
+  color: black !important;
+  font-weight: bold;
+}
+
 a {
   font-size: 1.2rem;
   color: #007bff;
-  text-decoration: none;
+}
+
+.shot {
+  background-color: #d32f2f;
+  border: 2px solid #000;
+  color: white;
+}
+
+.wave-effect {
+  animation: wave-text 1.5s infinite ease-in-out;
 }
 
 a:hover {
   text-decoration: underline;
+}
+
+@keyframes gold-wipe {
+  100% {
+    background: linear-gradient(0deg, gold 25%, #ffecb3 50%, gold 75%);
+    background-size: 300% 300%;
+    background-position: 0% 0%;
+  }
+  0% {
+    background: linear-gradient(0deg, gold 25%, #ffecb3 1000%, gold 10%);
+    background-position: 200% 200%;
+  }
+}
+
+@keyframes wave-text {
+  0% {
+    transform: rotate(0deg) scale(1);
+    text-shadow: 2px 2px 5px rgba(255, 255, 255, 0.5);
+  }
+  25% {
+    transform: rotate(3deg) scale(1.05);
+    text-shadow: 3px -2px 6px rgba(255, 255, 255, 0.6);
+  }
+  50% {
+    transform: rotate(-3deg) scale(0.95);
+    text-shadow: -3px 2px 6px rgba(255, 255, 255, 0.6);
+  }
+  75% {
+    transform: rotate(3deg) scale(1.05);
+    text-shadow: 2px -2px 5px rgba(255, 255, 255, 0.5);
+  }
+  100% {
+    transform: rotate(0deg) scale(1);
+    text-shadow: 2px 2px 5px rgba(255, 255, 255, 0.5);
+  }
 }
 
 @media (max-width: 600px) {
