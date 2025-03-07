@@ -244,12 +244,8 @@ a:hover {
     background-size: 300% 300%;
     background-position: 0% 0%;
   }
-  50% {
-    background-image: linear-gradient(45deg, gold 10%, #ffdd57 50%, gold 90%);
-    background-position: 100% 100%;
-  }
   100% {
-    background-image: linear-gradient(45deg, gold 25%, #ffecb3 50%, gold 75%);
+    background-image: linear-gradient(45deg, gold 25%, #ffecb3 1000%, gold 75%);
     background-position: 200% 200%;
   }
 }
