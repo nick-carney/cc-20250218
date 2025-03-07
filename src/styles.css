@@ -223,6 +223,8 @@ h6 {
   justify-content: center;
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
   transform: scale(1.1); /* Slight pop effect */
+  perspective: 800px;
+  transform: rotateY(10deg) scale(1.1);	
 }
 
 a {
