@@ -230,14 +230,18 @@ export default function App() {
             (board[i].isSelected || board[i].isBonus || board[i].isShot)
         )
       ) {
-        setBingoBoard((prevBoard) =>
+		  setBingoBoard((prevBoard) =>
   			prevBoard.map((cell, index) =>
     			combo.includes(index)
-      	? { ...cell, isWinning: true, name: cell.isBonus ? '' : cell.name }
+      				? {
+          				...cell,
+          				isWinning: true,
+          				name: cell.isBonus ? "" : cell.name,
+          				animationDelay: `${combo.indexOf(index) * 0.3}s`, // Staggers animations
+        			}
       : cell
   )
 );
-
         return true;
       }
     }
@@ -314,23 +318,18 @@ export default function App() {
           <div className="bingo-grid">
             {bingoBoard.map((cell, index) => (
               <div
-                key={index}
-                className={`bingo-cell ${
-                  cell.isWinning ? "winning strikethrough" : ""
-                } ${!cell.isWinning && cell.isShot ? "shot wave-effect" : ""} ${
-                  cell.isSelected ? "selected" : ""
-                } ${cell.isBonus ? "bonus" : ""}`}
-                style={{
-                  visibility: "visible",
-                  color: cell.isShot
-                    ? "white"
-                    : cell.isRevealed
-                    ? "black"
-                    : "transparent",
-                }}
-              >
-                {cell.name}
-              </div>
+  key={index}
+  className={`bingo-cell ${cell.isSelected ? "selected" : ""} ${cell.isBonus ? "bonus" : ""} 
+  ${cell.isShot ? "shot wave-effect" : ""} ${cell.isWinning ? "winning strikethrough" : ""}`}
+  style={{
+    visibility: "visible",
+    color: cell.isShot ? "white" : cell.isRevealed ? "black" : "transparent",
+    animationDelay: cell.animationDelay, // Applies the stagger effect
+  }}
+>
+  {cell.name}
+</div>
+
             ))}
           </div>
           {gameWon && <h2 className="winner">BINGO!</h2>}

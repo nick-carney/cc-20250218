@@ -239,6 +239,8 @@ h6 {
   will-change: transform;
   box-shadow: inset 0px -4px 6px rgba(139, 69, 19, 0.6), /* Inner shadow for depth */
               0px 4px 6px rgba(0, 0, 0, 0.4); /* Outer shadow for thickness */
+  opacity: 0;
+  animation-fill-mode: forwards;	
 }
 
 a {
