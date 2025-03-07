@@ -215,8 +215,8 @@ h6 {
 .winning::before {
   content: "";
   position: absolute;
-  width: 90%;
-  height: 90%;
+  width: 92%;
+  height: 92%;
   border-radius: 50%;
   background: linear-gradient(90deg, #d4af37, #b8860b);
   transform: translateZ(-2px);
@@ -227,10 +227,9 @@ h6 {
   position: relative;
   border-radius: 50%; /* Circular shape */
   border: 4px solid #d4af37; /* Metallic gold border */
-  animation: gold-coin-rotate 1.5s infinite linear;
-  color: black !important;
+  animation: gold-coin-rotate 2.5s infinite linear;
+  color: darkgoldenrod !important;
   font-weight: bold;
-  text-decoration: line-through;
   display: flex;
   align-items: center;
   justify-content: center;
