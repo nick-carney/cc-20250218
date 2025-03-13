@@ -237,8 +237,8 @@ h6 {
   transform-origin: center;
   transform-style: preserve-3d;
   will-change: transform;
-  box-shadow: inset 0px -4px 6px rgba(139, 69, 19, 0.6), /* Inner shadow for depth */
-              0px 4px 6px rgba(0, 0, 0, 0.4); /* Outer shadow for thickness */
+  box-shadow: inset 0px -4px 6px rgba(139, 69, 19, 0.6),
+    /* Inner shadow for depth */ 0px 4px 6px rgba(0, 0, 0, 0.4); /* Outer shadow for thickness */
 }
 
 a {
@@ -278,7 +278,71 @@ a:hover {
   }
 }
 
-@keyframes wave-text {
+/* Dark mode styles */
+.dark-mode {
+  background-color: #121212;
+  color: white;
+}
+
+.dark-mode .bingo-cell {
+  background-color: #1e1e1e;
+  color: white;
+  border-color: #333;
+}
+
+.dark-mode .selected {
+  background-color: #4caf50;
+}
+
+.dark-mode .bonus {
+  background-color: #ff9800;
+}
+
+.dark-mode .shot {
+  background-color: #d32f2f;
+}
+
+/* Dark Mode Toggle Button */
+.toggle-mode-btn {
+  position: fixed;
+  top: 10px;
+  right: 10px;
+  padding: 12px 20px;
+  font-size: 1rem;
+  font-weight: bold;
+  background-color: #222;
+  color: #ffcc00;
+  border: 2px solid #ffcc00;
+  border-radius: 50px;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+  z-index: 1000;
+}
+
+/* Fun hover effect */
+.toggle-mode-btn:hover {
+  background-color: #ffcc00;
+  color: #222;
+  transform: scale(1.1) rotate(-5deg);
+  box-shadow: 0 0 10px #ffcc00;
+}
+
+/* Dark mode button style when dark mode is active */
+.dark-mode .toggle-mode-btn {
+  background-color: #ffcc00;
+  color: #222;
+  border: 2px solid #222;
+}
+
+.dark-mode .toggle-mode-btn:hover {
+  background-color: #222;
+  color: #ffcc00;
+  transform: scale(1.1) rotate(5deg);
+  box-shadow: 0 0 10px #ffcc00;
+}
+
+.dark-mode .start-btn,
+.dark-mode .n @keyframes wave-text {
   0% {
     transform: rotate(0deg) scale(1);
     text-shadow: 2px 2px 5px rgba(255, 255, 255, 0.5);

@@ -18,6 +18,19 @@ export default function App() {
     new Set(JSON.parse(localStorage.getItem("revealedDrinks")) || [])
   );
 
+  const [darkMode, setDarkMode] = useState(
+    JSON.parse(localStorage.getItem("darkMode")) || false
+  );
+
+  useEffect(() => {
+    document.body.classList.toggle("dark-mode", darkMode);
+    localStorage.setItem("darkMode", JSON.stringify(darkMode));
+  }, [darkMode]);
+
+  const toggleDarkMode = () => {
+    setDarkMode((prevMode) => !prevMode);
+  };
+
   // Function to show stars when user wins
 
   useEffect(() => {
@@ -112,9 +125,11 @@ export default function App() {
   // Shot function, includes randomizing location
 
   const addShotSquare = () => {
-  	let availableIndexes = bingoBoard
-     .map((cell, index) => (!cell.isSelected && !cell.isShot && !cell.isBonus ? index : null))
-     .filter((index) => index !== null);
+    let availableIndexes = bingoBoard
+      .map((cell, index) =>
+        !cell.isSelected && !cell.isShot && !cell.isBonus ? index : null
+      )
+      .filter((index) => index !== null);
 
     if (availableIndexes.length === 0) return;
 
@@ -231,12 +246,16 @@ export default function App() {
         )
       ) {
         setBingoBoard((prevBoard) =>
-  			prevBoard.map((cell, index) =>
-    			combo.includes(index)
-      	? { ...cell, isWinning: true, name: cell.isBonus ? '' : cell.name }
-      : cell
-  )
-);
+          prevBoard.map((cell, index) =>
+            combo.includes(index)
+              ? {
+                  ...cell,
+                  isWinning: true,
+                  name: cell.isBonus ? "" : cell.name,
+                }
+              : cell
+          )
+        );
 
         return true;
       }
@@ -335,6 +354,10 @@ export default function App() {
           </div>
           {gameWon && <h2 className="winner">BINGO!</h2>}
 
+          <button className="toggle-mode-btn" onClick={toggleDarkMode}>
+            {darkMode ? "☀️ Light Mode" : "🌙 Dark Mode"}
+          </button>
+
           <button className="reset-btn" onClick={resetGame}>
             New Game
           </button>
@@ -343,4 +366,3 @@ export default function App() {
     </div>
   );
 }
-
